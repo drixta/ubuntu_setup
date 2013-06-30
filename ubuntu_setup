@@ -1,46 +1,46 @@
 #!/bin/sh
 #install Broadcom wifi#
-sudo apt-get install --reinstall bcmwl-kernel-source
-sudo modprobe wl
+#sudo apt-get install --reinstall bcmwl-kernel-source
+#sudo modprobe wl
 #update & upgrade#
 sudo apt-get update && sudo apt-get upgrade
 #install curl#
-sudo apt-get install curl
+sudo apt-get install -y curl
 #install aptitude#
-sudo apt-get aptitude
+sudo apt-get -y aptitude
 #install openssh#
-sudo aptitude install openssh-server
+sudo aptitude install -y openssh-server
 #install rvm#
 curl -L https://get.rvm.io | bash -s stable --ruby
 #install other dependencies#
-sudo apt-get install build-essential openssl libreadline6 libreadline6-dev \
+sudo apt-get install -y build-essential openssl libreadline6 libreadline6-dev \
 curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 \
 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison  \
 subversion pkg-config
 #install rails#
-gem install rails -v 3.2.9
+gem install -y rails -v 3.2.9
 #install chrome#
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update
-sudo apt-get install chrome-browser
+sudo apt-get install -y chrome-browser
 #install sublime#
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get install -y sublime-text
 #install Cinnamon#
 sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-stable
 sudo apt-get update
-sudo apt-get install cinnamon
+sudo apt-get install -y cinnamon
 #intall vlc#
-sudo apt-get install vlc
+sudo apt-get install -y vlc
 #install filezilla#
-sudo apt-get install filezilla
+sudo apt-get install -y filezilla
 #install putty#
-sudo apt-get install putty
+sudo apt-get install -y putty
 #install git and config#
-sudo apt-get install git
-git config --global user.name "Quan"
+sudo apt-get install -y git
+git config --global user.name "Quan Pham"
 git config --global user.email drixta@gmail.com
 #update & upgrade#
 sudo apt-get update && sudo apt-get upgrade
