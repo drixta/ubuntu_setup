@@ -10,6 +10,12 @@ sudo apt-get install -y curl
 sudo apt-get -y aptitude
 #install openssh#
 sudo aptitude install -y openssh-server
+#install node#
+sudo apt-get update
+sudo apt-get install python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
 #install rvm#
 curl -L https://get.rvm.io | bash -s stable --ruby
 rvm install 2.0.0 --with-openssl-dir=$HOME/.rvm/usr
